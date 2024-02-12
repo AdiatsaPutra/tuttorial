@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tuttorial/crypto_api/presentation/pages/crypto_page.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:tuttorial/groceries_app/pages/grocery_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const CryptoPage(),
+      title: 'Biometric',
+      theme: ThemeData(textTheme: GoogleFonts.poppinsTextTheme()
+          // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          // useMaterial3: true,
+          ),
+      home: GroceriesPage(),
     );
   }
 }
